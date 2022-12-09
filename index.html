@@ -10,19 +10,65 @@
 </head>
 
 <body>
-    <!-- The following class name, container, is a class used by Bootstrap to create a single centered column down the page -->
+    <!-- "container" is a class used by Bootstrap to create a single centered column down the page -->
     <article class="container">
         <!-- Callout -->
         <section class="callout">
-            <h1>The finest whiskeys delivered to your doorstep.</h1>
-            <!-- The following class name, lead, is a built-in Bootstrap class. It makes the byline matching the heading style -->
-            <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s>€19.99</s> <strong><mark>First one is free!</mark></strong></p>
-            <!-- The following class names, btn-lg & btn-success, are built-in Bootstrap classes. They make buttons large, green (etc.) -->
-            <p><button class="btn btn-lg btn-success">Sign Up!</button></p>
-            <!-- The following class name, text-muted, is another built-in Bootstrap class. It renders the text a little bit lighter -->
-            <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
+            <!-- "row" is a class used by Bootstrap to trigger the grid-based layout  -->
+            <div class="row">
+                <!-- At this writing, for responsiveness with Bootstrap, a "col-x" class must always be the direct child of a "row" class -->
+                <div class="col-12">
+                    <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <!-- "lead" is a built-in Bootstrap class. It makes the byline matching the heading style -->
+                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s>€19.99</s> <strong><mark>First one is free!</mark></strong></p>
+                    <!-- "btn-lg" and "btn-success" are built-in Bootstrap classes. They make buttons large, green and properly styled -->
+                    <p><button class="btn btn-lg btn-success">Sign Up!</button></p>
+                    <!-- "text-muted" is a built-in Bootstrap class. It renders the text a little bit lighter -->
+                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
+                </div>
+            </div>
         </section>
         <!-- /.callout -->
+        <hr>
+
+        <!-- Favorites -->
+        <section class="monthly-favorites">
+            <!-- The following class name, text-uppercase, is yet another built-in Bootstrap class. It makes the text uppercase -->
+            <h2 class="text-uppercase">Top 5 Whiskeys of the Month:</h2>
+            <!-- The following class name, table-hover, is yet another built-in Bootstrap classAdd. It enables a hover state on table rows -->
+            <table class="table table-hover">
+                <!-- The following class name, thead-dark, is yet another built-in Bootstrap classAdd. It renders table headers dark gray -->
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Origin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aberlour A'Bundah</th>
+                        <td>Scotland</td>
+                    </tr>
+                    <tr>
+                        <td>Ardbeg Ardcore</th>
+                        <td>Scotland</td>
+                    </tr>
+                    <tr>
+                        <td>W.L. Weller Special Reserve</th>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>Starward Unexpeated</th>
+                        <td>Australia</td>
+                    </tr>
+                    <tr>
+                        <td>Glenmorangie Lasanta</th>
+                        <td>Scotland</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- /.favorites -->
         <hr>
 
         <!-- Quotes -->
